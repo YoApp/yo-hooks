@@ -41,7 +41,8 @@ Submissions for more webservices are welcome.
 
 Supported services for now:
 - Heroku: http://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
-- CircleCI: http://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests finished running
+- CircleCI: http://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests are done 
+- Runscope: http://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done 
 
 ## Example
 
