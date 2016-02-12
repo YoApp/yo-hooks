@@ -29,8 +29,7 @@ Becomes this:
 * URLs are predefined in the pattern: http://yohooks.com/[webservice-name]/[your-yo-username]/
 * All you have to do is set a webhook at your webservice as this URL and you'll get a Yo with the short text when the webhook fires.
 
-So from now, if there is a service you use that provides webhooks and you want a simple way to get them - this is the place.
-Submissions for more webservices are welcome.
+*Submissions for more webservices are welcome.*
 
 Supported services for now:
 - Heroku: http://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
