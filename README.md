@@ -13,7 +13,14 @@ notify:
   webhooks:
     - url: http://yohooks.com/circleci/<your-yo-username>/
 ```
+---
 
+This:  
+![](http://cl.ly/2K0Z0G0U0w2z/Screen%20Shot%202016-02-11%20at%2010.58.33%20PM.png)  
+Becomes this:  
+![](http://cl.ly/0n320c261C0J/IMG_4748%20copy.png)  
+
+---
 ## Why? (Motivation)
 1. No more spinning up server just to receive webhooks.
 2. No more coding a whole project just to parse webhook payloads that are different at each webservice.
