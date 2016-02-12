@@ -14,8 +14,8 @@ Becomes this:
 ![](http://cl.ly/0n320c261C0J/IMG_4748%20copy.png)  
 
 ---
-## Why? (Motivation)
-1. No more spinning up server just to receive webhooks.
+## Why?
+1. No more spinning up servers just to receive webhooks.
 2. No more coding a whole project just to parse webhook payloads that are different at each webservice.
 
 ## How?
