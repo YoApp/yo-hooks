@@ -7,7 +7,7 @@ import importlib
 
 app = Flask(__name__)
 
-@app.route('AD9BC962B342FADAD9DF22C9C52402E8.txt')
+@app.route('/AD9BC962B342FADAD9DF22C9C52402E8.txt')
 def g():
     return """4F999E361631FF611B4F505C0291A22D27F8F24B
 comodoca.com"""
