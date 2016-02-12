@@ -7,10 +7,6 @@ import importlib
 
 app = Flask(__name__)
 
-@app.route('/AD9BC962B342FADAD9DF22C9C52402E8.txt')
-def g():
-    return """4F999E361631FF611B4F505C0291A22D27F8F24B
-comodoca.com"""
 
 @app.route('/<module_name>/<username>/', methods=['GET', 'POST'])
 def webhook(module_name, username):
@@ -19,13 +15,15 @@ def webhook(module_name, username):
     translate = getattr(module, 'translate',)
     text = translate(request)
 
-    data = {'api_token': os.environ.get('API_TOKEN'),
+    default_token = os.environ.get('API_TOKEN')
+    data = {'api_token': os.environ.get(module_name.upper() + '_YO_TOKEN', default_token),
             'text': text,
             'username': username}
 
     response = requests.post("http://api.justyo.co/yo/",
                              json=data)
     return response.text, response.status_code
+
 
 if __name__ == "__main__":
     app.debug = True
