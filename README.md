@@ -37,7 +37,9 @@ Supported services for now:
 - Runscope: http://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done
 - GitHub: http://yohooks.com/github/[your-yo-username]/ will Yo you code is pushed
 
-## Example
+## Examples
+
+### How to create a `translate` function
 
 Heroku's docs describe the payload here:
 
@@ -51,5 +53,11 @@ def translate(request):
 ```
 That's it.
 It's that simple.
+
+### How to add GitHub webhook:
+
+In your GitHub repo settings -> webhooks:
+![](http://cl.ly/0N3J1A280E3g/Screen%20Shot%202016-02-12%20at%2012.48.10%20PM.png)
+
 
 
