@@ -16,7 +16,7 @@ notify:
 
 ## Why? (Motivation)
 1. No more spinning up server just to receive webhooks.
-2. No more coding whole project just to parse webhooks payload that is different at each web service.
+2. No more coding a whole project just to parse webhook payloads that are different at each webservice.
 
 ## How?
 * Each web service has a `python module` with a single function called `translate`
