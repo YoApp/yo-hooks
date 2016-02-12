@@ -5,14 +5,6 @@ Turn any webhook into a meaningful Yo.
 
 ### Heroku
 ```heroku addons:create deployhooks:http --url=http://yohooks.com/heroku/<your-yo-username>/```
-
-### CircleCI
-In circleci.yml add:
-```
-notify:
-  webhooks:
-    - url: http://yohooks.com/circleci/<your-yo-username>/
-```
 ---
 
 This:  
