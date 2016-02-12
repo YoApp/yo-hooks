@@ -1,5 +1,5 @@
 # Yo Hooks
-Turn any webhook into a Yo.
+Turn any webhook into a meaningful Yo.
 
 ## TL;DR
 
