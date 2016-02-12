@@ -18,3 +18,20 @@ Contibutions are welcome.
 Supported services for now:
 - Heroku: http://www.yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
 - CircleCI: http://www.yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests finished running
+
+## Example
+
+Heroku's docs describe the payload here:
+
+!(http://cl.ly/2d0w360A2P1J/Screen%20Shot%202016-02-11%20at%207.26.03%20PM.png)[]
+
+All we need is the deployed app name. So the translate function is:
+```
+def translate(request):
+    text = 'Deployed ' + request.form.get('app')
+    return text
+```
+That's it.
+It's that simple.
+
+
