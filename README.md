@@ -26,7 +26,7 @@ Becomes this:
 2. No more coding a whole project just to parse webhook payloads that are different at each webservice.
 
 ## How?
-* Each web service has a `python module` with a single function called `translate`
+* Each supported webservice (like heroku, circleci, etc..) has a python module with a single function called `translate` - [Example](https://github.com/YoApp/yo-hooks/blob/master/heroku.py)
 * The `translate` function accepts a Flask request and translates its payload into a very short string.
 * A Flask server runs and listens to webhooks from supported webservices.
 * Once a webhook occures, the server take the request payload and `translate`s it into the short string.
