@@ -23,7 +23,7 @@ Supported services for now:
 
 Heroku's docs describe the payload here:
 
-!(http://cl.ly/2d0w360A2P1J/Screen%20Shot%202016-02-11%20at%207.26.03%20PM.png)[]
+![http://cl.ly/2d0w360A2P1J/Screen%20Shot%202016-02-11%20at%207.26.03%20PM.png]()
 
 All we need is the deployed app name. So the translate function is:
 ```
