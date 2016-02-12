@@ -3,6 +3,19 @@ Turn any webhook into a Yo
 
 ## For when you just want a simple Yo out of webhooks.
 
+## TL;DR
+
+### Heroku
+```heroku addons:create deployhooks:http --url=http://yobar.herokuapp.com/heroku/<your-yo-username>/```
+
+### CircleCI
+In circleci.yml add:
+```
+notify:
+  webhooks:
+    - url: https://yohooks.com/circleci/<your-yo-username>/
+```
+
 ## Why? (Motivation)
 1. No more spinning up server just to receive webhooks.
 2. No more coding whole project just to parse webhooks payload that is different at each web service.
