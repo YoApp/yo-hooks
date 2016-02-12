@@ -6,14 +6,14 @@ Turn any webhook into a Yo
 ## TL;DR
 
 ### Heroku
-```heroku addons:create deployhooks:http --url=http://yobar.herokuapp.com/heroku/<your-yo-username>/```
+```heroku addons:create deployhooks:http --url=http://yohooks.com/heroku/<your-yo-username>/```
 
 ### CircleCI
 In circleci.yml add:
 ```
 notify:
   webhooks:
-    - url: https://yohooks.com/circleci/<your-yo-username>/
+    - url: http://yohooks.com/circleci/<your-yo-username>/
 ```
 
 ## Why? (Motivation)
@@ -28,7 +28,7 @@ notify:
 * A Yo is sent to the username provided by the webhook URL path.
 
 ## What should I do to use this:
-* URLs are predefined in the pattern: https://yohooks.com/[webservice-name]/[your-yo-username]/
+* URLs are predefined in the pattern: http://yohooks.com/[webservice-name]/[your-yo-username]/
 * All you have to do is set a webhook at your webservice as this URL and you'll get a Yo with the short text when the webhook fires.
 
 So from now, if there is a service you use that provides webhooks and you want a simple way to get them - this is the place.
