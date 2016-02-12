@@ -29,8 +29,8 @@ Becomes this:
 * Each supported webservice (like heroku, circleci, etc..) has a python module with a single function called `translate` - [Example](https://github.com/YoApp/yo-hooks/blob/master/heroku.py)
 * The `translate` function accepts a Flask request and translates its payload into a very short string.
 * A Flask server runs and listens to webhooks from supported webservices.
-* Once a webhook occures, the server take the request payload and `translate`s it into the short string.
-* A Yo is sent to the username provided by the webhook URL path.
+* Once a webhook occures, the server takes the request's payload and `translate`s it into the short string.
+* A Yo with the short string is sent to the username provided by the webhook URL path.
 
 ## What should I do to use this:
 * URLs are predefined in the pattern: http://yohooks.com/[webservice-name]/[your-yo-username]/
