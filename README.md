@@ -8,10 +8,7 @@ Turn any webhook into a meaningful Yo.
 
 ---
 
-This:  
-![](http://cl.ly/2K0Z0G0U0w2z/Screen%20Shot%202016-02-11%20at%2010.58.33%20PM.png)  
-Becomes this:  
-![](http://cl.ly/0n320c261C0J/IMG_4748%20copy.png)  
+![](http://cl.ly/0A0n0q2y050e/Screen%20Shot%202016-02-12%20at%203.57.34%20PM.png)  
 
 ---
 ## Why?
