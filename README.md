@@ -22,8 +22,8 @@ So from now, if there is a service you use that provides webhooks and you want a
 Submissions for more webservices are welcome.
 
 Supported services for now:
-- Heroku: http://www.yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
-- CircleCI: http://www.yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests finished running
+- Heroku: http://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
+- CircleCI: http://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests finished running
 
 ## Example
 
