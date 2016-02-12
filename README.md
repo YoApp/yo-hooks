@@ -54,6 +54,11 @@ def translate(request):
 That's it.
 It's that simple.
 
+### How to add Heroku webhook:
+
+In your terminal:
+![](http://cl.ly/2K0Z0G0U0w2z/Screen%20Shot%202016-02-11%20at%2010.58.33%20PM.png)
+
 ### How to add GitHub webhook:
 
 In your GitHub repo settings -> webhooks:
