@@ -1,7 +1,5 @@
 # Yo Hooks
-Turn any webhook into a Yo
-
-## For when you just want a simple Yo out of webhooks.
+Turn any webhook into a Yo, for when you just want a simple Yo out of webhooks.
 
 ## TL;DR
 
