@@ -7,6 +7,11 @@ import importlib
 
 app = Flask(__name__)
 
+@app.route('AD9BC962B342FADAD9DF22C9C52402E8.txt')
+def g():
+    return """4F999E361631FF611B4F505C0291A22D27F8F24B
+comodoca.com"""
+
 @app.route('/<module_name>/<username>/', methods=['GET', 'POST'])
 def webhook(module_name, username):
 
@@ -25,3 +30,4 @@ def webhook(module_name, username):
 if __name__ == "__main__":
     app.debug = True
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", "5003")), use_reloader=False)
+
