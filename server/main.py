@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-from flask import Flask, request
+from flask import Flask, request, redirect
 import requests
 import importlib
 
@@ -23,6 +23,11 @@ def webhook(module_name, username):
     response = requests.post("http://api.justyo.co/yo/",
                              json=data)
     return response.text, response.status_code
+
+
+@app.route('/', methods=['GET'])
+def home():
+    return redirect('https://github.com/YoApp/yo-hooks')
 
 
 if __name__ == "__main__":
