@@ -5,6 +5,7 @@ Turn any webhook into a meaningful Yo.
 
 ### Heroku
 ```heroku addons:create deployhooks:http --url=http://yohooks.com/heroku/<your-yo-username>/```
+
 ---
 
 This:  
