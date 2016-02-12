@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.pyc
+*.swp
+.idea
+node_modules/
+venv/
+.DS_Store
+env
