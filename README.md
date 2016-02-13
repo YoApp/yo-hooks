@@ -34,7 +34,7 @@ Supported services for now:
 - Heroku: http://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
 - CircleCI: http://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests are done 
 - Runscope: http://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done
-- GitHub: http://yohooks.com/github/[your-yo-username]/ will Yo you code is pushed
+- GitHub: http://yohooks.com/github/[your-yo-username]/ will Yo you when code is pushed
 
 ## Examples
 
