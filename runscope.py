@@ -11,5 +11,5 @@ https://www.runscope.com/docs/api-testing/notifications#webhook
 
 
 def translate(request):
-    text = request.form.get('test_name') + ': ' + request.form.get('result')
+    text = request.json.get('bucket_name') + ': ' + request.json.get('result')
     return text
