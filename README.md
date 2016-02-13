@@ -1,6 +1,6 @@
 # Yo Hooks
 
-Predefined URLs for your webhooks.
+Simpe predefined URLs for your webhooks.
 
 Supported services for now:
 - Heroku: http://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
