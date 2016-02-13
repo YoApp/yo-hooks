@@ -16,7 +16,7 @@ Turn any webhook into a meaningful Yo.
 2. No more coding a whole project just to parse webhook payloads that are different at each webservice.
 
 ## How?
-* Each supported webservice (like heroku, circleci, etc..) has a python module with a single function called `translate` - [Example](https://github.com/YoApp/yo-hooks/blob/master/heroku.py)
+* Each supported webservice (like heroku, circleci, etc..) has a python module with a single function called `translate` - [Example 1](https://github.com/YoApp/yo-hooks/blob/master/heroku.py), [Example 2](https://github.com/YoApp/yo-hooks/blob/master/github.py), [Example 3](https://github.com/YoApp/yo-hooks/blob/master/circleci.py)
 * The `translate` function accepts a Flask request and translates its payload into a very short string.
 * A Flask server runs and listens to webhooks from supported webservices.
 * Once a webhook occures, the server takes the request's payload and `translate`s it into the short string.
