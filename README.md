@@ -1,17 +1,13 @@
 # Yo Hooks
 Turn any webhook into a meaningful Yo.
 
-## TL;DR
+Need a URL to use as a webhook on heroku? use this one: http://yohook.com/heroku/[your-yo-username]/
 
-### Heroku
-```heroku addons:create deployhooks:http --url=http://yohooks.com/heroku/<your-yo-username>/```
+```heroku addons:create deployhooks:http --url=http://yohooks.com/heroku/[your-yo-username]/```
 
 ---
 
-This:  
-![](http://cl.ly/2K0Z0G0U0w2z/Screen%20Shot%202016-02-11%20at%2010.58.33%20PM.png)  
-Becomes this:  
-![](http://cl.ly/0n320c261C0J/IMG_4748%20copy.png)  
+![](http://cl.ly/0A0n0q2y050e/Screen%20Shot%202016-02-12%20at%203.57.34%20PM.png)  
 
 ---
 ## Why?
@@ -19,7 +15,7 @@ Becomes this:
 2. No more coding a whole project just to parse webhook payloads that are different at each webservice.
 
 ## How?
-* Each supported webservice (like heroku, circleci, etc..) has a python module with a single function called `translate` - [Example](https://github.com/YoApp/yo-hooks/blob/master/heroku.py)
+* Each supported webservice (like heroku, circleci, etc..) has a python module with a single function called `translate` - [Example 1](https://github.com/YoApp/yo-hooks/blob/master/heroku.py), [Example 2](https://github.com/YoApp/yo-hooks/blob/master/github.py), [Example 3](https://github.com/YoApp/yo-hooks/blob/master/circleci.py)
 * The `translate` function accepts a Flask request and translates its payload into a very short string.
 * A Flask server runs and listens to webhooks from supported webservices.
 * Once a webhook occures, the server takes the request's payload and `translate`s it into the short string.
@@ -34,9 +30,12 @@ Becomes this:
 Supported services for now:
 - Heroku: http://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
 - CircleCI: http://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests are done 
-- Runscope: http://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done 
+- Runscope: http://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done
+- GitHub: http://yohooks.com/github/[your-yo-username]/ will Yo you when code is pushed
 
-## Example
+## Examples
+
+### How to create a `translate` function
 
 Heroku's docs describe the payload here:
 
@@ -50,5 +49,16 @@ def translate(request):
 ```
 That's it.
 It's that simple.
+
+### How to add Heroku webhook:
+
+In your terminal:
+![](http://cl.ly/2K0Z0G0U0w2z/Screen%20Shot%202016-02-11%20at%2010.58.33%20PM.png)
+
+### How to add GitHub webhook:
+
+In your GitHub repo settings -> webhooks:
+![](http://cl.ly/0N3J1A280E3g/Screen%20Shot%202016-02-12%20at%2012.48.10%20PM.png)
+
 
 
