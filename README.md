@@ -11,7 +11,6 @@ Supported services for now:
 ### How to add Heroku webhook:
 In your terminal:
 ```heroku addons:create deployhooks:http --url=http://yohooks.com/heroku/[your-yo-username]/```
-![](http://cl.ly/2K0Z0G0U0w2z/Screen%20Shot%202016-02-11%20at%2010.58.33%20PM.png)
 
 ### How to add GitHub webhook:
 
