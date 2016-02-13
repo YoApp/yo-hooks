@@ -28,7 +28,7 @@ In your GitHub repo settings -> webhooks:
 
 ## Motivation
 * Many providers support webhooks, but each provider has a different payload.
-* Webhooks are usually HTTP POST requests which means that if you want to receive it you'll need a server running and parsing these incoming requests.
+* Webhooks are HTTP POST requests which means that if you want to receive it you'll need a server running and parsing these incoming requests.
 * Sometimes you just want a simple push notification to your phone when something happens, providers don't support push notifications mostly, but they do support webhooks.
 * This project means you don't need to run a server, you don't need to parse the payload, basically you don't need anything besides the Yo app to receive the pushes.
 * The URLs are predifined for you to paste in your provider webhook configuration.
