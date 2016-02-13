@@ -26,9 +26,12 @@ In your GitHub repo settings -> webhooks:
 
 #Contribute
 
-## Why?
-1. No more spinning up servers just to receive webhooks.
-2. No more coding a whole project just to parse webhook payloads that are different at each provider.
+## Motivation
+* Many providers support webhooks, but each provider has a different payload.
+* Webhooks are usually HTTP POST requests which means that if you want to receive it you'll need a server running and parsing these incoming requests.
+* Sometimes you just want a simple push notification to your phone when something happens, providers don't support push notifications mostly, but they do support webhooks.
+* This project means you don't need to run a server, you don't need to parse the payload, basically you don't need anything besides the Yo app to receive the pushes.
+* The URLs are predifined for you to paste in your provider webhook configuration.
 
 ## How?
 * Each supported provider (like heroku, circleci, etc..) has a python module with a single function called `translate` - [Example 1](https://github.com/YoApp/yo-hooks/blob/master/heroku.py), [Example 2](https://github.com/YoApp/yo-hooks/blob/master/github.py), [Example 3](https://github.com/YoApp/yo-hooks/blob/master/circleci.py)
