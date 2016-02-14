@@ -3,14 +3,14 @@
 ## Simple predefined URLs for your webhooks.
 
 Supported services for now:
-- Heroku: http://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
-- CircleCI: http://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests are done 
-- Runscope: http://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done
-- GitHub: http://yohooks.com/github/[your-yo-username]/ will Yo you when code is pushed
+- Heroku: https://yohooks.com/heroku/[your-yo-username]/ will Yo you when your app is deployed
+- CircleCI: https://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests are done 
+- Runscope: https://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done
+- GitHub: https://yohooks.com/github/[your-yo-username]/ will Yo you when code is pushed
 
 ### How to add Heroku webhook:
 In your terminal:
-```heroku addons:create deployhooks:http --url=http://yohooks.com/heroku/[your-yo-username]/```
+```heroku addons:create deployhooks:http --url=https://yohooks.com/heroku/[your-yo-username]/```
 
 ### How to add GitHub webhook:
 
