@@ -14,5 +14,5 @@ import json
 def translate(request):
     message = request.args.get('message')
     data = json.loads(message)
-    text = data.get('host') + ' ' + data.get('down')
+    text = data.get('host') + ' ' + data.get('description')
     return text
