@@ -7,6 +7,7 @@ Supported services for now:
 - CircleCI: https://yohooks.com/circleci/[your-yo-username]/ will Yo you when your tests are done 
 - Runscope: https://yohooks.com/runscope/[your-yo-username]/ will Yo you when your tests are done
 - GitHub: https://yohooks.com/github/[your-yo-username]/ will Yo you when code is pushed
+- Generic Yo: https://yohooks.com/justyo/[your-yo-username]/ a generic webhook url that sends just a Yo
 
 ### How to add Heroku webhook:
 In your terminal:
@@ -20,6 +21,12 @@ In your GitHub repo settings -> webhooks:
 ---
 
 ![](http://cl.ly/0A0n0q2y050e/Screen%20Shot%202016-02-12%20at%203.57.34%20PM.png)  
+
+---
+
+### How to add XCode webhook:
+
+![](http://cl.ly/442i032C1k0l/Screen%20Shot%202016-02-19%20at%203.12.48%20PM.png)  
 
 ---
 
