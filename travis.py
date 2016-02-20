@@ -15,7 +15,7 @@ In circleci.yml add:
 
 
 def translate(request):
-    payload = request.json
+    payload = request.json.get('payload')
     subject = payload.get('message')
     status = payload.get('status_message')
     text = subject[:25] + u'... ' + status
