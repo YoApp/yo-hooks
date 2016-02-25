@@ -1,3 +1,5 @@
+[![Slack Status](http://slack.justyo.co/badge.svg)](http://slack.justyo.co)
+
 # Yo Hooks
 
 ## Simple predefined URLs for your webhooks.
