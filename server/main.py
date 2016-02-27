@@ -18,7 +18,7 @@ def webhook(module_name, username):
     default_token = os.environ.get('API_TOKEN')
     data = {'api_token': os.environ.get(module_name.upper() + '_YO_TOKEN', default_token),
             'text': text,
-            'is_push_only': True,
+            'is_push_only': 1,
             'username': username}
 
     response = requests.post("http://api.justyo.co/yo/",
