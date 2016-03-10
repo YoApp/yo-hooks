@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Description:
 Called on CircleCI tests finished
