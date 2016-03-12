@@ -8,6 +8,7 @@ import importlib
 app = Flask(__name__)
 
 
+@app.route('/<module_name>/<username>', methods=['GET', 'POST'])
 @app.route('/<module_name>/<username>/', methods=['GET', 'POST'])
 def webhook(module_name, username):
 
